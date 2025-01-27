@@ -8,7 +8,7 @@
 
 / {
     chosen {
-        zephyr,display = &ssd1306;
+        zephyr,display = &oled;
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
     };
@@ -69,9 +69,10 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(5,3) RC(5,4) RC(5,5)    RC(5,6)  RC(5
     };
 };
 
-&i2c1 {
+&pro_micro_i2c {
     status = "okay";
-    ssd1306: ssd1306@3c {
+
+    oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
         width = <128>;
@@ -80,11 +81,10 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(5,3) RC(5,4) RC(5,5)    RC(5,6)  RC(5
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <31>;
-        prechargep1 = <0x02>;
-        prechargep2 = <0x02>;
-        compins = <0x02>;
-        vcomh = <0x20>;
-        clock-frequency = <400000>;
-        i2c-address = <0x3c>;
+        segment-remap;
+        com-invdir;
+        com-sequential;
+        inversion-on;
+        prechargep = <0x22>;
     };
 };
