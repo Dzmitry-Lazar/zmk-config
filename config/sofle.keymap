@@ -138,7 +138,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(5,3) RC(5,4) RC(5,5)    RC(5,6)  RC(5
             bindings = <
 &kp F1    &kp F2   &kp F3    &kp F4    &kp F5      &kp F6                                             &none     &none     &none    &none   &none    &none
 &td_f7    &kp F8   &kp F9    &kp F10   &kp F11     &kp F12                                            &none     &none     &none    &none   &none    &none
-&none     &none    &kp HOME  &kp UP    &kp END     &kp BKSPC                                          &none     &none     &none    &none   &none    &none
+&none     &none    &none     &none     &none       &none                                            &none     &none     &none    &none   &none    &none
 &kp LSHFT &none    &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL    &none                        &none      &none     &none     &none    &none   &none    &none
 &none     &none    &none     &none     &none       &none      &none  &kp LBRC     &none    &kp BSLH   &none     &none     &none    &none   &none    &none
             >;
@@ -173,7 +173,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(5,3) RC(5,4) RC(5,5)    RC(5,6)  RC(5
 &rgb_ug RGB_TOG    &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_SAI &td_unds        &td_prn                                                 &none     &none     &none    &none   &none    &none
 &rgb_ug RGB_EFF    &rgb_ug RGB_BRD &rgb_ug RGB_HUD &rgb_ug RGB_SAD &kp SEMICOLON   &td_lcbr                                                &none     &none     &none    &none   &none    &none
 &none              &none           &none           &none           &kp EQUAL       &td_abk         &none                        &none      &none     &none     &none    &none   &none    &none
-&none              &none           &none           &none           &none           &none           &none  &kp LBRC     &none    &kp BSLH   &none     &none     &none    &none   &none    &none                                  
+&none              &none           &none           &none           &none           &none           &none  &none        &none    &none      &none     &none     &none    &none   &none    &none                                  
             >;
         };
 
