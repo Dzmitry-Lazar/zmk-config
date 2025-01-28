@@ -138,7 +138,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(5,3) RC(5,4) RC(5,5)    RC(5,6)  RC(5
             bindings = <
 &kp F1    &kp F2   &kp F3    &kp F4    &kp F5      &kp F6                                             &none     &none     &none    &none   &none    &none
 &td_f7    &kp F8   &kp F9    &kp F10   &kp F11     &kp F12                                            &none     &none     &none    &none   &none    &none
-&none     &none    &none     &none     &none       &none                                            &none     &none     &none    &none   &none    &none
+&none     &none    &kp HOME  &kp UP    &kp END     &kp BSPC                                           &none     &none     &none    &none   &none    &none
 &kp LSHFT &none    &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL    &none                        &none      &none     &none     &none    &none   &none    &none
 &none     &none    &none     &none     &none       &none      &none  &kp LBRC     &none    &kp BSLH   &none     &none     &none    &none   &none    &none
             >;
