@@ -36,7 +36,7 @@
         compatible = "zmk,matrix-transform";
         columns = <16>;
         rows = <6>;
-        #if !IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+        #if IS_ENABLED(MY_RIGHT)
         col-offset = <6>;
         #endif
 
