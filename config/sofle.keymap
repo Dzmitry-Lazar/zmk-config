@@ -126,7 +126,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(5,3) RC(5,4) RC(5,5)    RC(5,6)  RC(5
 &kp TAB   &kp Q    &kp W    &kp E  &kp R     &kp T                                                                    &kp Y      &kp U         &kp I     &kp O    &kp P     &kp BSPC
 &kp CAPS  &kp A    &kp S    &kp D  &kp F     &kp G                                                                    &kp H      &kp J         &kp K     &kp L    &kp ENTER &kp HOME
 &kp LSHFT &kp Z    &kp X    &kp C  &kp V     &kp B     &kp C_MUTE                                 &kp C_PLAY_PAUSE    &kp N      &kp M         &kp COMMA &kp DOT  &kp UP    &kp END
-&kp LCTRL &kp LGUI &kp LALT &none  &kp ENTER &kp SPACE &td_lower  &mt ADJUST LBRC     &kp RBRC    &kp SLASH           &none      &kp SEMICOLON &kp SQT   &kp LEFT &kp DOWN  &kp RIGHT
+&kp LCTRL &kp LGUI &kp LALT &none  &kp ENTER &kp SPACE &mo LOWER  &lt ADJUST LBRC     &kp RBRC    &kp SLASH           &none      &kp SEMICOLON &kp SQT   &kp LEFT &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -136,11 +136,11 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(5,3) RC(5,4) RC(5,5)    RC(5,6)  RC(5
             display-name = "lower";
 
             bindings = <
-&kp F1    &kp F2   &kp F3    &kp F4    &kp F5      &kp F6                                             &none     &none     &none    &none   &none    &none
-&td_f7    &kp F8   &kp F9    &kp F10   &kp F11     &kp F12                                            &none     &none     &none    &none   &none    &none
-&none     &none    &kp HOME  &kp UP    &kp END     &kp BSPC                                           &none     &none     &none    &none   &none    &none
-&kp LSHFT &none    &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL    &none                        &none      &none     &none     &none    &none   &none    &none
-&none     &none    &none     &none     &none       &none      &none  &kp LBRC     &none    &kp BSLH   &none     &none     &none    &none   &none    &none
+&kp F1      &kp F2   &kp F3    &kp F4    &kp F5      &kp F6                                             &none     &none     &none      &none   &none    &kp PSCRN
+&td_f7      &kp F8   &kp F9    &kp F10   &kp F11     &kp F12                                            &none     &none     &none      &none   &none    &none
+&none       &none    &kp HOME  &kp UP    &kp END     &kp BSPC                                           &none     &none     &none      &none   &none    &none
+&kp LSHFT   &none    &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL    &none                        &none      &none     &none     &none      &none   &none    &none
+&tog RAISE  &none    &none     &none     &none       &none      &none  &kp LBRC     &none    &kp BSLH   &none     &none     &kp GRAVE  &none   &none    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -172,7 +172,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(5,3) RC(5,4) RC(5,5)    RC(5,6)  RC(5
 &bt BT_CLR         &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                            &none     &none     &none    &none   &none    &none
 &rgb_ug RGB_TOG    &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_SAI &td_unds        &td_prn                                                 &none     &none     &none    &none   &none    &none
 &rgb_ug RGB_EFF    &rgb_ug RGB_BRD &rgb_ug RGB_HUD &rgb_ug RGB_SAD &kp SEMICOLON   &td_lcbr                                                &none     &none     &none    &none   &none    &none
-&none              &none           &none           &none           &kp EQUAL       &td_abk         &none                        &none      &none     &none     &none    &none   &none    &none
+&kp LSHFT          &none           &none           &none           &kp EQUAL       &td_abk         &none                        &none      &none     &none     &none    &none   &none    &none
 &none              &none           &none           &none           &none           &none           &none  &none        &none    &none      &none     &none     &none    &none   &none    &none                                  
             >;
         };
